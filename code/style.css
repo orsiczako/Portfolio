@@ -159,13 +159,9 @@ button.info:hover {
   font-weight: lighter;
 }
 #quote {
-  font-size: 1.4em;
+  font-size: 1.1em;
   margin-top: 2.5em;
 }
 #write {
-  grid-area: D;
   right: 100px;
-}
-.header-container > :nth-child(3) {
-  grid-column: 1 / span 2; /* Make the C column span both columns */
 }
