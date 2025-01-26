@@ -58,7 +58,8 @@ nav ul {
 #logo {
   width: clamp(5%, 10vw, 10%);
   height: auto;
-  margin-right: 1em;
+
+  margin-top: 0.5em;
 }
 
 ul li button {
