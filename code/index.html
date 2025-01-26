@@ -5,43 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Czakó Orsolya</title>
+    <link rel="icon" href="/images/logo.png" type="image/png" />
   </head>
   <body>
-    <nav>
-      <img id="logo" src="/images/logo.png" alt="Czakó Orsolya's logo" />
-      <ul class="nav-links">
-        <li><button class="info">Rólam</button></li>
-        <li><button class="info">Kapcsolat</button></li>
-        <li><button class="info">Certificates</button></li>
-        <li><button class="info">Projektek</button></li>
-        <li><button class="info" id="EN">EN</button></li>
-        <li><button class="info" id="HU">HU</button></li>
-        <li>
-          <button id="linkedin">
-            <img src="/images/linkedin.png" alt="LinkedIn logo" />
-          </button>
-        </li>
-        <li>
-          <button id="github">
-            <img src="/images/github.png" alt="GitHub logo" />
-          </button>
-        </li>
-      </ul>
-    </nav>
-    <div class="header-container">
-      <div class="header">
-        <h1>Czakó Orsolya</h1>
-        <h3>&lt;Software Engineer/&gt;</h3>
-        <h1 id="quote" style="color: white">
-          “Egy bug nem hiba, hanem váratlan funkció!”
-        </h1>
-        <h3 id="writer" style="color: grey">-Egy nagyon bölcs programozó</h3>
+    <section id="section1">
+      <nav>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <img id="logo" src="/images/logo.png" alt="Czakó Orsolya's logo" />
+        <ul class="nav-links">
+          <li><a href="#section1"><button class="info">Kezdőlap</button></li></a>
+          <li><a href="#section2"><button class="info">Rólam</button></li></a>
+          <li><button class="info">Kapcsolat</button></li>
+          <li><button class="info">Képesítések</button></li>
+          <li><button class="info">Projektek</button></li>
+          <li><button class="info" id="EN">EN</button></li>
+          <li><button class="info" id="HU">HU</button></li>
+          <li>
+            <button
+              id="linkedin"
+              data-url="https://www.linkedin.com/in/czak%C3%B3-orsolya-908128257/"
+            >
+              <img src="/images/linkedin.png" alt="LinkedIn logo" />
+            </button>
+          </li>
+          <li>
+            <button id="github" data-url="https://github.com/orsiczako">
+              <img src="/images/github.png" alt="GitHub logo" />
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <div class="header-container">
+        <div class="header">
+          <h1>Czakó Orsolya</h1>
+          <h3>&lt;Software Engineer/&gt;</h3>
+          <h1 id="quote" style="color: white">
+            “Egy bug nem hiba, hanem váratlan funkció!”
+          </h1>
+          <h3 id="writer" style="color: grey">-Egy nagyon bölcs programozó</h3>
+          <a href="#section2"><button id="more"></button></a>
+        </div>
+        <img
+          class="me"
+          src="/images/me_myself_and_i.png"
+          alt="Czakó Orsolya ül az avarban"
+        />
       </div>
-      <img
-        class="me"
-        src="/images/me_myself_and_i.png"
-        alt="Czakó Orsolya ül az avarban"
-      />
-    </div>
+    </section>
+    <section id="section2">
+      <div id="about">
+        <div data-en class="title" style="display: none">
+          <h1>About me</h1>
+        </div>
+        <div data-hu class="title">
+          <h1>
+            Üdvözlöm! <br />
+            <span>Czakó Orsolya vagyok</span>
+          </h1>
+        </div>
+        <div class="introduction">
+          <p data-en class="introtext" style="display: none"></p>
+          <p data-hu class="introtext">
+            Czakó Orsolya vagyok, másodéves programtervező informatikus hallgató
+            a Debreceni Egyetemen.A kreatív problémamegoldás és az innováció
+            iránti elkötelezettségem motivál abban, hogy olyan megoldásokat
+            hozzak létre, amelyek valódi értéket teremtenek. Szabadidőmben
+            szívesen mélyülök el technológiai kihívásokban, de a csapatmunka és
+            az együttműködés is nagy szerepet játszik az életemben, hiszen
+            hiszem, hogy a legjobb ötletek közös munkával születnek.
+          </p>
+        </div>
+      </div>
+    </section>
+    <script src="scripts.js"></script>
   </body>
 </html>
